@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet</title>
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="tarjeta">
+        <div class="titulo">
+        </div>
+        <div class="cabecera">
+            <img src="Imagenes/Planta_Cabecera.png" alt="Planta verde">
+        </div>
+        <div class="tituloImagen_universidad">
+            <div class="logoUDLA">
+                <img src="Imagenes/Logo_Universidad_Color.png" alt="Logo de la universidad">
+            </div>
+            <img src="Imagenes/Letras_Nombre_Universidad.png" class="textoUniversidad" alt="Nombre de la universidad">
+        </div>
+        <div class="FotoPerfil">
+            <img src="Imagenes/FotoPerfil.jpg" alt="Imagen de perfil">
+        </div>
+        <div class="informacion">
+            <label id="nombre">JHEISON ARVEY GARCIA MORENO</label>
+            <label id="cedula">1117500400</label>
+            <svg id="codigoBarras"></svg>
+            <div id="grupoSanguineo">
+                <label>G.S. RH:</label>
+                <label id="rh">O+</label>
+            </div>
+            <label id="rol">Funcionario</label>
+        </div>
+    </div>
+    <script src="./Scripts/scripts.js"></script>
+</body>
+
+</html>

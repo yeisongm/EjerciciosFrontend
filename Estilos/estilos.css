@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --clr-primary: #2b2d42;
+    --clr-secundary: green;
+    --fnt-primary: Tahoma;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.cabecera {
+    width: 100%;
+    height: 35%;
+    background-color: var(--clr-secundary);
+    border-radius: 10px 10px 50% 50%;
+    filter: brightness(130%);
+    position: relative;
+    z-index: 1;
+}
+
+.cabecera img {
+    filter: blur(0.9px) opacity(20%) saturate(250%);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 50% 50%;
+    object-fit: cover;
+}
+
+.tituloImagen_universidad {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logoUDLA {
+    height: 59px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoUDLA img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.tituloImagen_universidad .textoUniversidad {
+    width: 50%;
+    height: 28px;
+    filter: invert(1) brightness(200%);
+}
+
+.FotoPerfil {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FotoPerfil img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.informacion {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: var(--fnt-primary);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 20%;
+}
+
+.informacion #cedula {
+    margin: 5px 0px;
+    font-size: 11px;
+}
+
+.informacion #rh {
+    font-size: 11px;
+    color: black;
+}
+
+.informacion div {
+    font-weight: normal;
+    display: inline-block;
+    font-size: 11px;
+    color: var(--clr-secundary);
+}
+
+.informacion div #rh{
+    color: var(--clr-primary);
+    font-weight: bold;
+}
+
+.informacion #rol{
+    margin-top: 5px;
+    color: var(--clr-secundary);
+}
+
+.tarjeta {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 250px;
+}
+
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Imagenes/Heliconia.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el div */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    filter: blur(0.9px) opacity(10%);
+    z-index: -1; /* Coloca la imagen detrás del contenido de .tarjeta */
+}
